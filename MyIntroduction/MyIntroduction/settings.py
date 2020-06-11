@@ -119,4 +119,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+
+
+
+
 STATIC_URL = '/static/'
+
+#媒体的url
+MEDIA_URL = '/media/'
+
+#这里是指定目录，base——dir 就是上一层目录
+MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
