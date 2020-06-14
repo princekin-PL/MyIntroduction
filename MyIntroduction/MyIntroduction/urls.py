@@ -15,13 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
+
 from . import view
 
 #导入与图片存储相关的url
 from django.conf.urls.static import static
 from django.conf import settings
 
+
+#获取博客页面
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',view.home),
+    path('blog/', include('blog.urls')),
+    # path('blog',blog.views.blog_page)
 ]+ static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
