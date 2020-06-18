@@ -121,10 +121,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 
-
-
+#存放自己的静态文件(CSS, JavaScript, Images)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'MyIntroduction/static/')
+]
 
 STATIC_URL = '/static/'
+#把项目里面的静态文件都双方在这
+STATIC_ROOT= os.path.join(BASE_DIR, 'static')
 
 #媒体的url
 MEDIA_URL = '/media/'

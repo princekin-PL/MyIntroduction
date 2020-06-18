@@ -1,0 +1,21 @@
+<style type="text/css">
+    pre{
+        white-space:pre-wrap;
+        word-wrap:break-word;
+        width:600px;
+        margin:20px auto;
+<!--        wight:'500'-->
+  }
+
+  </style>
+
+<div style="text-align: center;">
+    <h1>{{ blog.title }}</h1>
+    <h3>{{ blog.date }}</h3>
+    <img src="{{ blog.image.url }}"  height="250"  width="250" alt="">
+
+
+
+</div>
+
+ <pre >{{ blog.text}}</pre>

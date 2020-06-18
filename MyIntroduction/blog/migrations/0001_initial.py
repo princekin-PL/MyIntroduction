@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
     ]
-
+    #隐藏属性，可以指定页面
     operations = [
         migrations.CreateModel(
             name='blog',
